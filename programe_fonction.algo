@@ -1,0 +1,28 @@
+ Function dot_product(var v1,v2: ARRAY_OF FLOAT[N])
+  VAR
+     i:INTEGER:=0;
+     ps:FLOAT:=0.0;
+  BEGIN
+      FOR i FROM 0 TO N-1  DO
+          ps := ps + V1[i]*V2[i];
+      END_FOR
+      RETURN ps;
+  END
+
+ALGORITHM function
+VAR
+  t1:ARRAY_OF FLOAT[n];
+  t2:ARRAY_OF FLOAT[n];
+  N:INTEGER;
+BEGIN
+  Read(N);
+     FOR i FROM 0 TO N-1 D
+        Read(t1[i],t2[i]);
+      END_FOR
+    
+
+          IF (dot_product(t1[i],t2[i])=0) THEN
+             Write("ces deux vecteurs sont orthogonaux");
+        ELSE
+             Write("ces deux vecteurs ne sont pas orthogonaux");
+END
